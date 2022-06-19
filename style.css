@@ -1,0 +1,126 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: skyblue;
+}
+.face{
+	background: #ffcd00;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.face::before{
+	content: "";
+	position: absolute;
+	background: #b57700;
+	top: 180px;
+	width: 150px;
+	height: 70px;
+	border-top-right-radius: 70px;
+	border-top-left-radius: 70px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	transition: 0.5s;
+}
+.face:hover::before{
+	top: 210;
+	width: 150px;
+	height: 70px;
+	background: #b57700;
+	border-bottom-right-radius: 70px;
+	border-bottom-left-radius: 70px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.eyes{
+	position: relative;
+	top: -40px;
+	display: flex;
+}
+.eyes .eye{
+	background: #fff;
+	width: 80px;
+	height: 80px;
+	position: relative;
+	border-radius: 50%;
+	margin: 0 15px;
+}
+.eyes .eye::before{
+	content: "";
+	background: #333;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	border-radius: 50%;
+	left: 25px;
+	transform: translate(-50% -50%);
+}
+.face2{
+	background: #ffcd00;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.face2::before{
+	content: "";
+	position: absolute;
+	background: #b57700;
+	top: 180px;
+	width: 0px;
+	height: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	transition: 0.5s;
+}
+.face2:hover::before{
+	top: 210;
+	width: 150px;
+	height: 70px;
+	background: #b57700;
+	border-bottom-right-radius: 70px;
+	border-bottom-left-radius: 70px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.eyes2{
+	position: relative;
+	top: -40px;
+	display: flex;
+}
+.eyes2 .eye2{
+	background: #fff;
+	width: 80px;
+	height: 80px;
+	position: relative;
+	border-radius: 50%;
+	margin: 0 15px;
+}
+.eyes2 .eye2::before{
+	content: "";
+	background: #333;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	border-radius: 50%;
+	left: 25px;
+	transform: translate(-50% -50%);
+}
